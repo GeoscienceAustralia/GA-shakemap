@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<!DOCTYPE stationlist [
+<!ELEMENT stationlist (station+)>
+<!ATTLIST stationlist
+  created	CDATA	#REQUIRED
+>
+
+<!ELEMENT station (comp+)>
+<!ATTLIST station
+  code		CDATA 			#REQUIRED
+  name		CDATA 			#REQUIRED
+  insttype	CDATA 			#REQUIRED
+  lat		CDATA 			#REQUIRED
+  lon		CDATA 			#REQUIRED
+  source	(SCSN|CGS|NSMP) 	'SCSN'
+  netid		CDATA			#REQUIRED
+  commtype	(DIG|ANA) 		'DIG'
+  dist          CDATA                   '10.0'
+  loc		CDATA			''
+>
+
+<!ELEMENT comp (acc,vel,psa*)>
+<!ATTLIST comp
+  name          CDATA  #REQUIRED
+  originalname  CDATA  #IMPLIED
+>
+
+<!ELEMENT acc EMPTY>
+<!ELEMENT vel EMPTY>
+<!ELEMENT psa03 EMPTY>
+<!ELEMENT psa10 EMPTY>
+<!ELEMENT psa30 EMPTY>
+<!ATTLIST acc
+  value  CDATA         #REQUIRED
+  flag   CDATA        ''
+>
+<!ATTLIST vel
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa03
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa10
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa30
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+]>
+<stationlist created="1453273291">
+<station code="MEL_1" name="Unknown (Intensity III)" insttype="Observed" lat="-37.584629" lon="144.727990667" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="MEL_2" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8396965" lon="144.863208" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="MEL_3" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7651213333" lon="144.868287333" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="MEL_4" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8274744" lon="144.9394688" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.2">
+<comp name="Derived PGM">
+<acc value="2.1687" />
+<vel value="1.7577" />
+</comp>
+</station>
+<station code="MEL_5" name="Unknown (Intensity III)" insttype="Observed" lat="-37.781017" lon="144.935111" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="2.8">
+<comp name="Derived PGM">
+<acc value="1.6862" />
+<vel value="1.3480" />
+</comp>
+</station>
+<station code="MEL_6" name="Unknown (Intensity V)" insttype="Observed" lat="-37.7109215" lon="144.9350455" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.5">
+<comp name="Derived PGM">
+<acc value="4.9135" />
+<vel value="4.1648" />
+</comp>
+</station>
+<station code="MEL_7" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.5787345" lon="144.919189" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="MEL_8" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.864999" lon="144.984744429" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.9">
+<comp name="Derived PGM">
+<acc value="3.3687" />
+<vel value="2.7970" />
+</comp>
+</station>
+<station code="MEL_9" name="Unknown (Intensity III)" insttype="Observed" lat="-37.837095" lon="144.968889143" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="MEL_10" name="Unknown (Intensity III)" insttype="Observed" lat="-37.77840255" lon="144.96769435" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.1">
+<comp name="Derived PGM">
+<acc value="2.0365" />
+<vel value="1.6449" />
+</comp>
+</station>
+<station code="MEL_11" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.752338" lon="144.9718395" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="MEL_12" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.9450573333" lon="145.025051667" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="MEL_13" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.87444125" lon="145.0152065" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_14" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8289788889" lon="145.020412444" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="MEL_15" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7843226667" lon="145.022025667" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="MEL_16" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7285775" lon="145.011352" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="MEL_17" name="Unknown (Intensity III)" insttype="Observed" lat="-37.9886683333" lon="145.076624" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="MEL_18" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.9157945" lon="145.0503" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_19" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.887252625" lon="145.059116375" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="MEL_20" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8284004286" lon="145.078914" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="MEL_21" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7691676" lon="145.064636" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_22" name="Unknown (Intensity III)" insttype="Observed" lat="-37.729545" lon="145.066996667" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="MEL_23" name="Unknown (Intensity III)" insttype="Observed" lat="-37.6752898333" lon="145.066900833" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="MEL_24" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0727105" lon="145.128391" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_25" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.9389405" lon="145.0993105" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="MEL_26" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8382013333" lon="145.117746333" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="MEL_27" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7108975" lon="145.1058715" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="MEL_28" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.1322036" lon="145.171444" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_29" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0964675" lon="145.185492" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_30" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.9292095" lon="145.165404" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_31" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.780197" lon="145.165967833" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.2">
+<comp name="Derived PGM">
+<acc value="4.0684" />
+<vel value="3.4130" />
+</comp>
+</station>
+<station code="MEL_32" name="Unknown (Intensity III)" insttype="Observed" lat="-37.926503" lon="145.2317615" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="MEL_33" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.868504" lon="145.2263125" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="MEL_34" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.82595275" lon="145.221005" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="MEL_35" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7930905" lon="145.224879" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_36" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.040377" lon="145.27890475" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="MEL_37" name="Unknown (Intensity V)" insttype="Observed" lat="-37.92212575" lon="145.26143125" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.8">
+<comp name="Derived PGM">
+<acc value="5.9341" />
+<vel value="5.0822" />
+</comp>
+</station>
+<station code="MEL_38" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8800066667" lon="145.256760667" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="MEL_39" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.788184" lon="145.2680678" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_40" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0211926667" lon="145.331294333" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="MEL_41" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8848605" lon="145.3158715" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="MEL_42" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7819194" lon="145.3169434" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.4">
+<comp name="Derived PGM">
+<acc value="4.6139" />
+<vel value="3.8974" />
+</comp>
+</station>
+<station code="MEL_43" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.9031345" lon="145.356124" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="MEL_44" name="Unknown (Intensity V)" insttype="Observed" lat="-38.0653445" lon="145.4393845" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.5">
+<comp name="Derived PGM">
+<acc value="4.9135" />
+<vel value="4.1648" />
+</comp>
+</station>
+<station code="MEL_45" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0712838" lon="145.4749288" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="MEL_46" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.933833" lon="145.471904" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="MEL_47" name="Unknown (Intensity V)" insttype="Observed" lat="-38.1400645" lon="145.874696" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="5.0">
+<comp name="Derived PGM">
+<acc value="6.7298" />
+<vel value="5.8035" />
+</comp>
+</station>
+<station code="MEL_48" name="Unknown (Intensity VI)" insttype="Observed" lat="-38.243982" lon="146.236291" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="6.0">
+<comp name="Derived PGM">
+<acc value="12.6249" />
+<vel value="11.2687" />
+</comp>
+</station>
+<station code="MEL_49" name="Unknown (Intensity VI)" insttype="Observed" lat="-38.1922573333" lon="146.269481667" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="6.0">
+<comp name="Derived PGM">
+<acc value="12.6249" />
+<vel value="11.2687" />
+</comp>
+</station>
+<station code="MEL_50" name="Unknown (Intensity III)" insttype="Observed" lat="-36.3616135" lon="146.322709" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="2.5">
+<comp name="Derived PGM">
+<acc value="1.3962" />
+<vel value="1.1047" />
+</comp>
+</station>
+<station code="MEL_51" name="Unknown (Intensity V)" insttype="Observed" lat="-38.1874195" lon="146.514670667" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="5.2">
+<comp name="Derived PGM">
+<acc value="7.6322" />
+<vel value="6.6271" />
+</comp>
+</station>
+<station code="MEL_52" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8230096667" lon="147.618002667" source="SRC" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+
+</stationlist>

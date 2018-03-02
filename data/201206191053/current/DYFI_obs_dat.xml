@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<!DOCTYPE stationlist [
+<!ELEMENT stationlist (station+)>
+<!ATTLIST stationlist
+  created	CDATA	#REQUIRED
+>
+
+<!ELEMENT station (comp+)>
+<!ATTLIST station
+  code		CDATA 			#REQUIRED
+  name		CDATA 			#REQUIRED
+  insttype	CDATA 			#REQUIRED
+  lat		CDATA 			#REQUIRED
+  lon		CDATA 			#REQUIRED
+  source	(SCSN|CGS|NSMP) 	'SCSN'
+  netid		CDATA			#REQUIRED
+  commtype	(DIG|ANA) 		'DIG'
+  dist          CDATA                   '10.0'
+  loc		CDATA			''
+>
+
+<!ELEMENT comp (acc,vel,psa*)>
+<!ATTLIST comp
+  name          CDATA  #REQUIRED
+  originalname  CDATA  #IMPLIED
+>
+
+<!ELEMENT acc EMPTY>
+<!ELEMENT vel EMPTY>
+<!ELEMENT psa03 EMPTY>
+<!ELEMENT psa10 EMPTY>
+<!ELEMENT psa30 EMPTY>
+<!ATTLIST acc
+  value  CDATA         #REQUIRED
+  flag   CDATA        ''
+>
+<!ATTLIST vel
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa03
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa10
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa30
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+]>
+<stationlist created="1453271633">
+<station code="USGS_1" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.29" lon="142.883" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="USGS_2" name="Unknown (Intensity II)" insttype="Observed" lat="-35.3286" lon="143.5348" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="2.0">
+<comp name="Derived PGM">
+<acc value="1.0194" />
+<vel value="0.7927" />
+</comp>
+</station>
+<station code="USGS_3" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.0449" lon="143.683" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.6">
+<comp name="Derived PGM">
+<acc value="2.7893" />
+<vel value="2.2921" />
+</comp>
+</station>
+<station code="USGS_4" name="Unknown (Intensity III)" insttype="Observed" lat="-37.591" lon="143.8854" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="2.6">
+<comp name="Derived PGM">
+<acc value="1.4868" />
+<vel value="1.1804" />
+</comp>
+</station>
+<station code="USGS_5" name="Unknown (Intensity III)" insttype="Observed" lat="-37.0593" lon="144.2446" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_6" name="Unknown (Intensity III)" insttype="Observed" lat="-36.7891" lon="144.2543" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.1">
+<comp name="Derived PGM">
+<acc value="2.0365" />
+<vel value="1.6449" />
+</comp>
+</station>
+<station code="USGS_7" name="Unknown (Intensity III)" insttype="Observed" lat="-38.1423" lon="144.3184" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_8" name="Unknown (Intensity III)" insttype="Observed" lat="-38.1448" lon="144.4324" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="USGS_9" name="Unknown (Intensity III)" insttype="Observed" lat="-38.0548" lon="144.4355" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="2.9">
+<comp name="Derived PGM">
+<acc value="1.7957" />
+<vel value="1.4405" />
+</comp>
+</station>
+<station code="USGS_10" name="Unknown (Intensity III)" insttype="Observed" lat="-37.6946" lon="144.448" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_11" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.2373" lon="144.5434" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="USGS_12" name="Unknown (Intensity III)" insttype="Observed" lat="-38.1472" lon="144.5464" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_13" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.6971" lon="144.5614" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.6">
+<comp name="Derived PGM">
+<acc value="2.7893" />
+<vel value="2.2921" />
+</comp>
+</station>
+<station code="USGS_14" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.6093" lon="144.6775" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.9">
+<comp name="Derived PGM">
+<acc value="3.3687" />
+<vel value="2.7970" />
+</comp>
+</station>
+<station code="USGS_15" name="Unknown (Intensity III)" insttype="Observed" lat="-37.4291" lon="144.6831" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_16" name="Unknown (Intensity III)" insttype="Observed" lat="-36.1681" lon="144.7208" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.2">
+<comp name="Derived PGM">
+<acc value="2.1687" />
+<vel value="1.7577" />
+</comp>
+</station>
+<station code="USGS_17" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8837" lon="144.8963" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="USGS_18" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7936" lon="144.8988" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="USGS_19" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7035" lon="144.9014" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="USGS_20" name="Unknown (Intensity II)" insttype="Observed" lat="-35.5414" lon="144.9592" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="2.0">
+<comp name="Derived PGM">
+<acc value="1.0194" />
+<vel value="0.7927" />
+</comp>
+</station>
+<station code="USGS_21" name="Unknown (Intensity III)" insttype="Observed" lat="-37.9757" lon="145.0075" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_22" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8857" lon="145.01" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_23" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7956" lon="145.0123" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_24" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7055" lon="145.0147" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.6">
+<comp name="Derived PGM">
+<acc value="2.7893" />
+<vel value="2.2921" />
+</comp>
+</station>
+<station code="USGS_25" name="Unknown (Intensity III)" insttype="Observed" lat="-37.6154" lon="145.0172" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_26" name="Unknown (Intensity III)" insttype="Observed" lat="-36.3542" lon="145.0496" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_27" name="Unknown (Intensity III)" insttype="Observed" lat="-38.2478" lon="145.1144" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.1">
+<comp name="Derived PGM">
+<acc value="2.0365" />
+<vel value="1.6449" />
+</comp>
+</station>
+<station code="USGS_28" name="Unknown (Intensity III)" insttype="Observed" lat="-38.1578" lon="145.1167" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.2">
+<comp name="Derived PGM">
+<acc value="2.1687" />
+<vel value="1.7577" />
+</comp>
+</station>
+<station code="USGS_29" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0677" lon="145.119" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="4.1">
+<comp name="Derived PGM">
+<acc value="3.8203" />
+<vel value="3.1939" />
+</comp>
+</station>
+<station code="USGS_30" name="Unknown (Intensity III)" insttype="Observed" lat="-37.9776" lon="145.1213" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.2">
+<comp name="Derived PGM">
+<acc value="2.1687" />
+<vel value="1.7577" />
+</comp>
+</station>
+<station code="USGS_31" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8876" lon="145.1236" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.2">
+<comp name="Derived PGM">
+<acc value="2.1687" />
+<vel value="1.7577" />
+</comp>
+</station>
+<station code="USGS_32" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7974" lon="145.1259" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_33" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7074" lon="145.1282" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_34" name="Unknown (Intensity III)" insttype="Observed" lat="-37.6173" lon="145.1304" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="2.9">
+<comp name="Derived PGM">
+<acc value="1.7957" />
+<vel value="1.4405" />
+</comp>
+</station>
+<station code="USGS_35" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.3397" lon="145.2264" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="USGS_36" name="Unknown (Intensity III)" insttype="Observed" lat="-38.2497" lon="145.2286" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.1">
+<comp name="Derived PGM">
+<acc value="2.0365" />
+<vel value="1.6449" />
+</comp>
+</station>
+<station code="USGS_37" name="Unknown (Intensity III)" insttype="Observed" lat="-38.1595" lon="145.2308" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.2">
+<comp name="Derived PGM">
+<acc value="2.1687" />
+<vel value="1.7577" />
+</comp>
+</station>
+<station code="USGS_38" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0695" lon="145.233" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="USGS_39" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.9794" lon="145.2351" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.9">
+<comp name="Derived PGM">
+<acc value="3.3687" />
+<vel value="2.7970" />
+</comp>
+</station>
+<station code="USGS_40" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8893" lon="145.2373" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_41" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7992" lon="145.2394" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.2">
+<comp name="Derived PGM">
+<acc value="2.1687" />
+<vel value="1.7577" />
+</comp>
+</station>
+<station code="USGS_42" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0712" lon="145.3469" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="USGS_43" name="Unknown (Intensity III)" insttype="Observed" lat="-37.981" lon="145.3489" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_44" name="Unknown (Intensity III)" insttype="Observed" lat="-37.891" lon="145.351" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_45" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8008" lon="145.3529" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.6">
+<comp name="Derived PGM">
+<acc value="2.7893" />
+<vel value="2.2921" />
+</comp>
+</station>
+<station code="USGS_46" name="Unknown (Intensity III)" insttype="Observed" lat="-38.0727" lon="145.4608" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="USGS_47" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.6222" lon="145.4702" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="USGS_48" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.6147" lon="145.5642" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="4.1">
+<comp name="Derived PGM">
+<acc value="3.8203" />
+<vel value="3.1939" />
+</comp>
+</station>
+<station code="USGS_49" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8038" lon="145.58" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_50" name="Unknown (Intensity III)" insttype="Observed" lat="-38.6161" lon="145.6791" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_51" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7151" lon="145.6952" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="4.3">
+<comp name="Derived PGM">
+<acc value="4.3326" />
+<vel value="3.6472" />
+</comp>
+</station>
+<station code="USGS_52" name="Unknown (Intensity V)" insttype="Observed" lat="-38.1679" lon="145.9154" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="4.7">
+<comp name="Derived PGM">
+<acc value="5.5723" />
+<vel value="4.7559" />
+</comp>
+</station>
+<station code="USGS_53" name="Unknown (Intensity IV)" insttype="Observed" lat="-36.5457" lon="145.9386" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="USGS_54" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.2599" lon="146.1427" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.6">
+<comp name="Derived PGM">
+<acc value="2.7893" />
+<vel value="2.2921" />
+</comp>
+</station>
+<station code="USGS_55" name="Unknown (Intensity VI)" insttype="Observed" lat="-38.1706" lon="146.2579" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="5.9">
+<comp name="Derived PGM">
+<acc value="11.8551" />
+<vel value="10.5452" />
+</comp>
+</station>
+<station code="USGS_56" name="Unknown (Intensity V)" insttype="Observed" lat="-38.2614" lon="146.3713" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="4.7">
+<comp name="Derived PGM">
+<acc value="5.5723" />
+<vel value="4.7559" />
+</comp>
+</station>
+<station code="USGS_57" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.1718" lon="146.4862" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="USGS_58" name="Unknown (Intensity III)" insttype="Observed" lat="-36.0995" lon="146.8333" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_59" name="Unknown (Intensity III)" insttype="Observed" lat="-36.0996" lon="146.9444" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.2">
+<comp name="Derived PGM">
+<acc value="2.1687" />
+<vel value="1.7577" />
+</comp>
+</station>
+<station code="USGS_60" name="Unknown (Intensity IV)" insttype="Observed" lat="-36.0095" lon="146.9445" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.6">
+<comp name="Derived PGM">
+<acc value="2.7893" />
+<vel value="2.2921" />
+</comp>
+</station>
+<station code="USGS_61" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0828" lon="147.057" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="USGS_62" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8107" lon="147.6248" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="USGS_63" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8986" lon="147.9667" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="USGS_64" name="Unknown (Intensity III)" insttype="Observed" lat="-35.2815" lon="148.2645" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_65" name="Unknown (Intensity III)" insttype="Observed" lat="-35.3286" lon="150.4652" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="USGS_66" name="Unknown (Intensity II)" insttype="Observed" lat="-34.4155" lon="150.862" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="2.0">
+<comp name="Derived PGM">
+<acc value="1.0194" />
+<vel value="0.7927" />
+</comp>
+</station>
+<station code="USGS_67" name="Unknown (Intensity III)" insttype="Observed" lat="-33.8651" lon="151.161" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="2.7">
+<comp name="Derived PGM">
+<acc value="1.5834" />
+<vel value="1.2614" />
+</comp>
+</station>
+<station code="USGS_68" name="Unknown (Intensity III)" insttype="Observed" lat="-25.2434" lon="152.9013" source="USGS DYFI" netid="INTENSITY" commtype="Intensity" intensity="2.7">
+<comp name="Derived PGM">
+<acc value="1.5834" />
+<vel value="1.2614" />
+</comp>
+</station>
+
+</stationlist>

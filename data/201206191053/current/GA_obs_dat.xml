@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<!DOCTYPE stationlist [
+<!ELEMENT stationlist (station+)>
+<!ATTLIST stationlist
+  created	CDATA	#REQUIRED
+>
+
+<!ELEMENT station (comp+)>
+<!ATTLIST station
+  code		CDATA 			#REQUIRED
+  name		CDATA 			#REQUIRED
+  insttype	CDATA 			#REQUIRED
+  lat		CDATA 			#REQUIRED
+  lon		CDATA 			#REQUIRED
+  source	(SCSN|CGS|NSMP) 	'SCSN'
+  netid		CDATA			#REQUIRED
+  commtype	(DIG|ANA) 		'DIG'
+  dist          CDATA                   '10.0'
+  loc		CDATA			''
+>
+
+<!ELEMENT comp (acc,vel,psa*)>
+<!ATTLIST comp
+  name          CDATA  #REQUIRED
+  originalname  CDATA  #IMPLIED
+>
+
+<!ELEMENT acc EMPTY>
+<!ELEMENT vel EMPTY>
+<!ELEMENT psa03 EMPTY>
+<!ELEMENT psa10 EMPTY>
+<!ELEMENT psa30 EMPTY>
+<!ATTLIST acc
+  value  CDATA         #REQUIRED
+  flag   CDATA        ''
+>
+<!ATTLIST vel
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa03
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa10
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa30
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+]>
+<stationlist created="1453273333">
+<station code="GA_1" name="Unknown (Intensity II)" insttype="Observed" lat="-37.136869" lon="142.519363" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="1.5">
+<comp name="Derived PGM">
+<acc value="0.7443" />
+<vel value="0.5689" />
+</comp>
+</station>
+<station code="GA_2" name="Unknown (Intensity II)" insttype="Observed" lat="-37.282262" lon="142.929979" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="1.5">
+<comp name="Derived PGM">
+<acc value="0.7443" />
+<vel value="0.5689" />
+</comp>
+</station>
+<station code="GA_3" name="Unknown (Intensity III)" insttype="Observed" lat="-37.562107" lon="143.856149" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_4" name="Unknown (Intensity III)" insttype="Observed" lat="-38.027087" lon="144.04493" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_5" name="Unknown (Intensity III)" insttype="Observed" lat="-36.758711" lon="144.283746" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_6" name="Unknown (Intensity III)" insttype="Observed" lat="-38.18654775" lon="144.319914" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_7" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.078517" lon="144.33419" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_8" name="Unknown (Intensity III)" insttype="Observed" lat="-37.389163" lon="144.3222165" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_9" name="Unknown (Intensity III)" insttype="Observed" lat="-38.142032" lon="144.35936625" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="2.8">
+<comp name="Derived PGM">
+<acc value="1.6862" />
+<vel value="1.3480" />
+</comp>
+</station>
+<station code="GA_10" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.023592" lon="144.407866" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_11" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.247771" lon="144.453486" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_12" name="Unknown (Intensity III)" insttype="Observed" lat="-37.692102" lon="144.57042" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_13" name="Unknown (Intensity III)" insttype="Observed" lat="-37.57817225" lon="144.727920875" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_14" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.909499" lon="144.751876" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_15" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.882892" lon="144.785011" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_16" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.775288" lon="144.779705" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_17" name="Unknown (Intensity III)" insttype="Observed" lat="-37.72440125" lon="144.7646685" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_18" name="Unknown (Intensity III)" insttype="Observed" lat="-37.694558" lon="144.758213" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_19" name="Unknown (Intensity III)" insttype="Observed" lat="-37.576531" lon="144.754213" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_20" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.359298" lon="144.744024" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_21" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.4179755" lon="144.8329875" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_22" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.781097" lon="144.824663667" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_23" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7153975" lon="144.824817" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_24" name="Unknown (Intensity III)" insttype="Observed" lat="-37.701944" lon="144.79715" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_25" name="Unknown (Intensity III)" insttype="Observed" lat="-38.3621445" lon="144.8838345" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_26" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.73315" lon="144.866745" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_27" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.681439" lon="144.887315" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_28" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.77417075" lon="144.9275635" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_29" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7154095" lon="144.9196355" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_30" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.683269" lon="144.919959" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_31" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8724953333" lon="144.983753" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_32" name="Unknown (Intensity III)" insttype="Observed" lat="-37.81674628" lon="144.96349732" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="GA_33" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.786000375" lon="144.971774" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.1">
+<comp name="Derived PGM">
+<acc value="3.8203" />
+<vel value="3.1939" />
+</comp>
+</station>
+<station code="GA_34" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.728289" lon="144.9626445" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_35" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.395199" lon="144.990259" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_36" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.292868" lon="144.951258" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_37" name="Unknown (Intensity IV)" insttype="Observed" lat="-36.446323" lon="144.985152" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.6">
+<comp name="Derived PGM">
+<acc value="2.7893" />
+<vel value="2.2921" />
+</comp>
+</station>
+<station code="GA_38" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.219983" lon="145.038946" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_39" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.91994375" lon="145.0261295" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_40" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.879688" lon="145.023623714" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.9">
+<comp name="Derived PGM">
+<acc value="3.3687" />
+<vel value="2.7970" />
+</comp>
+</station>
+<station code="GA_41" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8251598" lon="145.0118322" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_42" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7789885" lon="145.01665725" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="GA_43" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.721908" lon="145.0063328" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.2">
+<comp name="Derived PGM">
+<acc value="4.0684" />
+<vel value="3.4130" />
+</comp>
+</station>
+<station code="GA_44" name="Unknown (Intensity III)" insttype="Observed" lat="-37.6435343333" lon="145.036471667" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_45" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.006524" lon="145.086334" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_46" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.964428" lon="145.055984" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_47" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.9225186667" lon="145.070291" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_48" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8813818333" lon="145.065314167" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_49" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8364888" lon="145.0756738" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="GA_50" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7729054" lon="145.0615046" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.4">
+<comp name="Derived PGM">
+<acc value="2.4595" />
+<vel value="2.0072" />
+</comp>
+</station>
+<station code="GA_51" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.732234" lon="145.068278167" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_52" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.6918246" lon="145.0647872" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.6">
+<comp name="Derived PGM">
+<acc value="2.7893" />
+<vel value="2.2921" />
+</comp>
+</station>
+<station code="GA_53" name="Unknown (Intensity III)" insttype="Observed" lat="-38.164954" lon="145.138056" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_54" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.141399" lon="145.122464" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_55" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.04579825" lon="145.11250325" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_56" name="Unknown (Intensity III)" insttype="Observed" lat="-37.8903106667" lon="145.105135" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_57" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.825367" lon="145.097419" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_58" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.704619" lon="145.103028" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_59" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.6242855" lon="145.1290435" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_60" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.024529" lon="145.136911" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_61" name="Unknown (Intensity III)" insttype="Observed" lat="-38.394104" lon="145.16246" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_62" name="Unknown (Intensity III)" insttype="Observed" lat="-37.975469" lon="145.1780735" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_63" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.9241816667" lon="145.176374667" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_64" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.864411" lon="145.176884667" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_65" name="Unknown (Intensity III)" insttype="Observed" lat="-37.829891375" lon="145.153553375" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_66" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.789122" lon="145.1609605" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_67" name="Unknown (Intensity III)" insttype="Observed" lat="-37.710972" lon="145.158986333" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_68" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.201782" lon="145.232773" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_69" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.98746" lon="145.214861" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_70" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.9195486667" lon="145.236778667" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_71" name="Unknown (Intensity III)" insttype="Observed" lat="-37.863861" lon="145.238182333" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_72" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8200042" lon="145.2133762" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_73" name="Unknown (Intensity III)" insttype="Observed" lat="-37.7359226667" lon="145.221669333" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_74" name="Unknown (Intensity IV)" insttype="Observed" lat="-36.440108" lon="145.228763" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_75" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.11705775" lon="145.279468" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_76" name="Unknown (Intensity III)" insttype="Observed" lat="-38.0815423333" lon="145.265139667" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.3">
+<comp name="Derived PGM">
+<acc value="2.3095" />
+<vel value="1.8783" />
+</comp>
+</station>
+<station code="GA_77" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0370065" lon="145.28731875" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_78" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.975887" lon="145.257785" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_79" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.86255" lon="145.286888" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_80" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7968326" lon="145.281326" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.6">
+<comp name="Derived PGM">
+<acc value="2.7893" />
+<vel value="2.2921" />
+</comp>
+</station>
+<station code="GA_81" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0348113333" lon="145.314907667" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_82" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0013806667" lon="145.308651333" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_83" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.892043625" lon="145.310090625" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_84" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7823108571" lon="145.311094571" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_85" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0625973333" lon="145.348430667" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.7">
+<comp name="Derived PGM">
+<acc value="2.9704" />
+<vel value="2.4493" />
+</comp>
+</station>
+<station code="GA_86" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.030918" lon="145.346115" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.9">
+<comp name="Derived PGM">
+<acc value="3.3687" />
+<vel value="2.7970" />
+</comp>
+</station>
+<station code="GA_87" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7630046" lon="145.3558994" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_88" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.932495" lon="145.44072" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.3">
+<comp name="Derived PGM">
+<acc value="4.3326" />
+<vel value="3.6472" />
+</comp>
+</station>
+<station code="GA_89" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.8759255" lon="145.4087895" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_90" name="Unknown (Intensity IV)" insttype="Observed" lat="-36.377518" lon="145.400044" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.2">
+<comp name="Derived PGM">
+<acc value="4.0684" />
+<vel value="3.4130" />
+</comp>
+</station>
+<station code="GA_91" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.0759413333" lon="145.483625333" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_92" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.653829" lon="145.517006" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_93" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.607954" lon="145.5896255" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_94" name="Unknown (Intensity IV)" insttype="Observed" lat="-36.750865" lon="145.57067" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_95" name="Unknown (Intensity III)" insttype="Observed" lat="-35.811678" lon="145.567321" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="2.5">
+<comp name="Derived PGM">
+<acc value="1.3962" />
+<vel value="1.1047" />
+</comp>
+</station>
+<station code="GA_96" name="Unknown (Intensity V)" insttype="Observed" lat="-37.7531835" lon="145.6710205" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="5.0">
+<comp name="Derived PGM">
+<acc value="6.7298" />
+<vel value="5.8035" />
+</comp>
+</station>
+<station code="GA_97" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.7477425" lon="145.721044" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_98" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.4340413333" lon="145.820048" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.3">
+<comp name="Derived PGM">
+<acc value="4.3326" />
+<vel value="3.6472" />
+</comp>
+</station>
+<station code="GA_99" name="Unknown (Intensity V)" insttype="Observed" lat="-38.1362" lon="145.85715" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.5">
+<comp name="Derived PGM">
+<acc value="4.9135" />
+<vel value="4.1648" />
+</comp>
+</station>
+<station code="GA_100" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.161155" lon="145.931824" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.3">
+<comp name="Derived PGM">
+<acc value="4.3326" />
+<vel value="3.6472" />
+</comp>
+</station>
+<station code="GA_101" name="Unknown (Intensity V)" insttype="Observed" lat="-38.401133" lon="146.161389" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.5">
+<comp name="Derived PGM">
+<acc value="4.9135" />
+<vel value="4.1648" />
+</comp>
+</station>
+<station code="GA_102" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.447032" lon="146.2704885" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.0">
+<comp name="Derived PGM">
+<acc value="3.5874" />
+<vel value="2.9889" />
+</comp>
+</station>
+<station code="GA_103" name="Unknown (Intensity V)" insttype="Observed" lat="-38.1771615" lon="146.267893611" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="5.3">
+<comp name="Derived PGM">
+<acc value="8.1278" />
+<vel value="7.0818" />
+</comp>
+</station>
+<station code="GA_104" name="Unknown (Intensity VI)" insttype="Observed" lat="-38.1860505" lon="146.2978385" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="6.0">
+<comp name="Derived PGM">
+<acc value="12.6249" />
+<vel value="11.2687" />
+</comp>
+</station>
+<station code="GA_105" name="Unknown (Intensity III)" insttype="Observed" lat="-36.354329" lon="146.325657" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_106" name="Unknown (Intensity V)" insttype="Observed" lat="-38.2341173333" lon="146.395630889" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="5.0">
+<comp name="Derived PGM">
+<acc value="6.7298" />
+<vel value="5.8035" />
+</comp>
+</station>
+<station code="GA_107" name="Unknown (Intensity V)" insttype="Observed" lat="-38.1966602" lon="146.5319284" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="4.6">
+<comp name="Derived PGM">
+<acc value="5.2326" />
+<vel value="4.4506" />
+</comp>
+</station>
+<station code="GA_108" name="Unknown (Intensity III)" insttype="Observed" lat="-36.122487" lon="146.887885" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_109" name="Unknown (Intensity IV)" insttype="Observed" lat="-36.07797225" lon="146.91786925" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_110" name="Unknown (Intensity IV)" insttype="Observed" lat="-36.187899" lon="146.94859" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.5">
+<comp name="Derived PGM">
+<acc value="2.6192" />
+<vel value="2.1449" />
+</comp>
+</station>
+<station code="GA_111" name="Unknown (Intensity IV)" insttype="Observed" lat="-38.107715" lon="147.064083" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_112" name="Unknown (Intensity III)" insttype="Observed" lat="-37.843944" lon="147.072542" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+<station code="GA_113" name="Unknown (Intensity III)" insttype="Observed" lat="-35.1298435" lon="147.359389" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="2.5">
+<comp name="Derived PGM">
+<acc value="1.3962" />
+<vel value="1.1047" />
+</comp>
+</station>
+<station code="GA_114" name="Unknown (Intensity IV)" insttype="Observed" lat="-37.824577" lon="147.631718" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.8">
+<comp name="Derived PGM">
+<acc value="3.1633" />
+<vel value="2.6174" />
+</comp>
+</station>
+<station code="GA_115" name="Unknown (Intensity III)" insttype="Observed" lat="-36.8873685" lon="149.9104085" source="Geoscience Australia" netid="INTENSITY" commtype="Intensity" intensity="3.0">
+<comp name="Derived PGM">
+<acc value="1.9123" />
+<vel value="1.5393" />
+</comp>
+</station>
+
+</stationlist>
