@@ -17,3 +17,7 @@ Usage of mmicsv2xml.py:
         
 Note: the script expects the param and csv files to be in the same directory
 
+Output xml file is written to event's "current" folder, e.g.
+
+    <INSTALL_DIR>/data/201605201814/current/20160520181402_dat.xml
+

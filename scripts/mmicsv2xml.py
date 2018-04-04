@@ -3,7 +3,7 @@
 Created on Thu Mar 01 16:41:15 2018
 
 Script to read 3-column csv files of lat, lon, mmi and convert to shakemap-
-compliant *_dat.xml file
+compliant *_dat.xml file.
 
 Usage:
     python mmicsv2xml.py <path/to/param/file>
@@ -20,6 +20,10 @@ Usage:
         eqmw           = 6.1
         yyyymmddHHMMSS = 20160520181402
         csvfile        = Pettermann_ranges_2016_intensities.csv   
+
+Output xml file is written to event's "current" folder, e.g.
+
+    <INSTALL_DIR>/data/201605201814/current/20160520181402_dat.xml
 
 @author: u56903
 """
@@ -72,13 +76,15 @@ mmi = array(mmi)
 lat = array(lat)
 lon = array(lon)
 
+# set grid size (in degrees)
 dd = 0.05
 d2 = dd / 2.
 
+# set lat/lon ranges +/- 6 degrees
 lonrng = arange(eqlo-6., eqlo+6., dd)
 latrng = arange(eqla-6., eqla+6., dd)
 
-# set min number of obs required for average mmi
+# set min number of obs/per cell required for average mmi - depends on total obs
 minObs = 0
 if len(mmi) > 100:
     minObs = 1
@@ -93,6 +99,7 @@ for lo in lonrng:
      for la in latrng:
          idx = where((lon >= lo-d2) & (lon < lo+d2) & \
                      (lat >= la-d2) & (lat < la+d2))[0]
+         
          # add to list greater than minObs
          if len(idx) > minObs:
              avmmi.append(mean(mmi[idx]))
@@ -137,14 +144,13 @@ for la, lo, mi in zip(avla, avlo, avmmi):
     vel = str('%0.4f' % pgv)
     smtxt += '"'.join(('    <comp name="DERIVED">\n        <acc value=', acc, '/>\n        <vel value=', \
                       vel, '/>\n    </comp>\n</station>\n'))
-
        
     i += 1
 
 # end text
 smtxt += endtxt
 
-# write to text
+# write to xml file
 f = open(path.join(outFolder, 'current', str(yyyymmddHHMMSS)+'_dat.xml'), 'wb')
 f.write(smtxt)
 f.close()
