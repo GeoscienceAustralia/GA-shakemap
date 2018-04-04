@@ -1,6 +1,6 @@
 <shakemap-data code_version="4.0 GSM" map_version="1">
-<earthquake id="20160708094050" lat="-32.458" lon="122.511" mag="4.97" year="2016" month="07" day="08" hour="09" minute="40" second="50" timezone="GMT" depth="0.0" locstring="Norseman, WA" created="1522798060"/>
-<stationlist created="1522798060">
+<earthquake id="20160708094050" lat="-32.458" lon="122.511" mag="4.97" year="2016" month="07" day="08" hour="09" minute="40" second="50" timezone="GMT" depth="0.0" locstring="Norseman, WA" created="1522809387"/>
+<stationlist created="1522809387">
 <station code="OBS_1" name="Unknown (Intensity IV)" insttype="Observed" lat="-35.0080" lon="117.7110" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
     <comp name="DERIVED">
         <acc value="0.0276"/>
