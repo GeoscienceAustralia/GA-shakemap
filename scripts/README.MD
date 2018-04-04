@@ -13,4 +13,7 @@ Usage of mmicsv2xml.py:
         eqdep          = 0.0
         eqmw           = 6.1
         yyyymmddHHMMSS = 20160520181402
-        csvfile        = Pettermann_ranges_2016_intensities.csv   
+        csvfile        = Pettermann_ranges_2016_intensities.csv
+        
+Note: the script expects the param and csv files to be in the same directory
+
