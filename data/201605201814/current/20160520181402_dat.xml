@@ -1,6 +1,6 @@
 <shakemap-data code_version="4.0 GSM" map_version="1">
-<earthquake id="20160520181402" lat="-25.579" lon="129.832" mag="6.1" year="2016" month="05" day="20" hour="18" minute="14" second="02" timezone="GMT" depth="0.0" locstring="Petermann Ranges, NT" created="1522809515"/>
-<stationlist created="1522809515">
+<earthquake id="20160520181402" lat="-25.579" lon="129.832" mag="6.1" year="2016" month="05" day="20" hour="18" minute="14" second="02" timezone="GMT" depth="0.0" locstring="Petermann Ranges, NT" created="1522821838"/>
+<stationlist created="1522821838">
 <station code="OBS_1" name="Unknown (Intensity III)" insttype="Observed" lat="-25.6790" lon="126.6320" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
     <comp name="DERIVED">
         <acc value="0.0062"/>

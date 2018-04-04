@@ -49,7 +49,7 @@ yyyymmddHHMMSS = lines[5].split('=')[-1].strip()
 csvfile = lines[6].split('=')[-1].strip()
 
 # set output folder
-outFolder = path.join(paramFile.split(sep)[0])
+outFolder = sep.join(paramFile.split(sep)[:3])
 
 '''
 csvfile format with one header line:
