@@ -151,6 +151,6 @@ for la, lo, mi in zip(avla, avlo, avmmi):
 smtxt += endtxt
 
 # write to xml file
-f = open(path.join(outFolder, 'current', str(yyyymmddHHMMSS)+'_dat.xml'), 'wb')
+f = open(path.join(outFolder, 'current', str(yyyymmddHHMMSS)+'_obs_dat.xml'), 'wb')
 f.write(smtxt)
 f.close()
