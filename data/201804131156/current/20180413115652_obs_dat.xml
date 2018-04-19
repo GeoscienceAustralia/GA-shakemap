@@ -1,0 +1,41 @@
+<shakemap-data code_version="4.0 GSM" map_version="1">
+<earthquake id="20180413115652" lat="-30.599" lon="121.329" mag="3.59" year="2018" month="04" day="13" hour="11" minute="56" second="52" timezone="GMT" depth="10.0" locstring="Kalgoorlie, WA" created="1524104856"/>
+<stationlist created="1524104856">
+<station code="OBS_1" name="Unknown (Intensity IV)" insttype="Observed" lat="-30.7804" lon="121.4512" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_2" name="Unknown (Intensity II)" insttype="Observed" lat="-30.7490" lon="121.4290" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_3" name="Unknown (Intensity III)" insttype="Observed" lat="-30.6990" lon="121.4290" source="AU" netid="Intensity" commtype="Intensity" intensity="2.9">
+    <comp name="DERIVED">
+        <acc value="0.0052"/>
+        <vel value="0.2423"/>
+    </comp>
+</station>
+<station code="OBS_4" name="Unknown (Intensity IV)" insttype="Observed" lat="-30.7990" lon="121.4790" source="AU" netid="Intensity" commtype="Intensity" intensity="3.8">
+    <comp name="DERIVED">
+        <acc value="0.0190"/>
+        <vel value="0.9541"/>
+    </comp>
+</station>
+<station code="OBS_5" name="Unknown (Intensity III)" insttype="Observed" lat="-30.7490" lon="121.4790" source="AU" netid="Intensity" commtype="Intensity" intensity="2.9">
+    <comp name="DERIVED">
+        <acc value="0.0050"/>
+        <vel value="0.2330"/>
+    </comp>
+</station>
+<station code="OBS_6" name="Unknown (Intensity II)" insttype="Observed" lat="-30.7192" lon="121.4548" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+</stationlist>
+</shakemap-data>

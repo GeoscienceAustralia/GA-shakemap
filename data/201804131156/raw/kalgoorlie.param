@@ -1,0 +1,7 @@
+locstring      = Kalgoorlie, WA
+eqla           = -30.599
+eqlo           = 121.329
+eqdep          = 10.0
+eqmw           = 3.59
+yyyymmddHHMMSS = 20180413115652
+csvfile        = Kalgoorlie_13_04_intensities.csv
