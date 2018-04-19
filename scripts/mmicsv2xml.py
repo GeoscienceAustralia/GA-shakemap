@@ -33,7 +33,7 @@ from mapping_tools import distance
 from numpy import array, arange, mean, where
 from mmi_tools import mmi2pgm_worden12, cmpsps2g
 from sys import argv
-from os import path, sep
+from os import path, sep, mkdir
 import time
 
 # set param file:
@@ -103,8 +103,14 @@ for lo in lonrng:
          # add to list greater than minObs
          if len(idx) > minObs:
              avmmi.append(mean(mmi[idx]))
-             avlo.append(lo)
-             avla.append(la)
+             
+             # use data lat/lon
+             if len(idx) == 1:
+                 avlo.append(lon[idx])
+                 avla.append(lat[idx])
+             else:
+                 avlo.append(lo)
+                 avla.append(la)
 
 # make earthquake header
 smtxt = '<shakemap-data code_version="4.0 GSM" map_version="1">\n'
@@ -149,6 +155,11 @@ for la, lo, mi in zip(avla, avlo, avmmi):
 
 # end text
 smtxt += endtxt
+
+# check to see if exists
+currentFolder = path.join(outFolder, 'current')
+if path.isdir(currentFolder) == False:
+    mkdir(currentFolder)
 
 # write to xml file
 f = open(path.join(outFolder, 'current', str(yyyymmddHHMMSS)+'_obs_dat.xml'), 'wb')
