@@ -67,9 +67,12 @@ lon = []
 mmi = []
 for line in lines:
     dat = line.strip().split(',')
-    lat.append(float(dat[0])) # keep as string
-    lon.append(float(dat[1])) # keep as string
-    mmi.append(float(dat[2]))
+    try:
+        lat.append(float(dat[0])) # keep as string
+        lon.append(float(dat[1])) # keep as string
+        mmi.append(float(dat[2])) 
+    except:
+        print 'Missing data!'
     
 # grid data and take average
 mmi = array(mmi)
