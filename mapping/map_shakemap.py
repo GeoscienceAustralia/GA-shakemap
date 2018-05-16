@@ -53,6 +53,7 @@ urcrnrlat = gridspec['lat_max']
 llcrnrlat = gridspec['lat_min']
 urcrnrlon = gridspec['lon_max']
 llcrnrlon = gridspec['lon_min']
+lonspan = urcrnrlon - llcrnrlon
 
 lon_0 = mean([llcrnrlon, urcrnrlon])
 lat_1 = percentile([llcrnrlat, urcrnrlat], 25)
@@ -73,15 +74,22 @@ m.drawstates()
 m.drawcountries()
 #m.drawmapboundary(fill_color='blue', zorder=50)
 #m.fillcontinents(color='coral',lake_color='aqua')
-m.drawparallels(arange(-90.,90.,0.5), labels=[1,0,0,0],fontsize=16, dashes=[2, 2], color='0.99', linewidth=0.0)
-m.drawmeridians(arange(0.,360.,0.5), labels=[0,0,0,1], fontsize=16, dashes=[2, 2], color='0.99', linewidth=0.0)
-'''
-m.drawmapscale(llcrnrlat+0.2, llcrnrlat+0.1, llcrnrlat+0.2, llcrnrlat+0.1, 100, \
-               fontsize = 16, barstyle='fancy', zorder=100)
-'''
+if lonspan <= 4.0:
+    tickspace = 0.5
+    scale_len = 100
+elif lonspan > 4.0:
+    tickspace = 1.0
+    scale_len = 200
+m.drawparallels(arange(-90.,90.,tickspace), labels=[1,0,0,0],fontsize=16, dashes=[2, 2], color='0.99', linewidth=0.0)
+m.drawmeridians(arange(0.,360.,tickspace), labels=[0,0,0,1], fontsize=16, dashes=[2, 2], color='0.99', linewidth=0.0)
+
+m.drawmapscale(llcrnrlon+1, llcrnrlat+0.4, llcrnrlon+1, llcrnrlat+0.4, scale_len, \
+               fontsize = 14, barstyle='fancy', zorder=100)
+
 ##########################################################################################
 # read topo
 ##########################################################################################
+
 mdiv = 500.
 
 print 'Reading topo file...'
@@ -89,7 +97,10 @@ netcdffile = '../../../DATA/GEBCO/au_gebco.nc'
 nc = NetCDFFile(netcdffile)
 
 zscale =2. #gray
-zscale = 40. #colour
+if lonspan <= 4.0:
+    zscale = 30. #colour
+else:
+    zscale = 30. #colour
 
 '''
 # if using SRTM 30m
@@ -155,83 +166,49 @@ for polygon in m.lakepolygons:
 ##########################################################################################
 # plot MMI locs
 ##########################################################################################
-"""
-from mmi_tools import parse_usgs_dyfi_geocoded
-hnd = []
-
-gammifile = 'GA_MMI_0.05d.csv'
-lines = open(gammifile).readlines()
+'''
+gammifile = '../data/201605201814/raw/Pettermann_ranges_2016_intensities.csv'
+lines = open(gammifile).readlines()[1:]
 gammi = []
 galat = []
 galon = []
 for line in lines:
     dat = line.strip().split(',')
     gammi.append(float(dat[2]))
-    galon.append(float(dat[0]))
-    galat.append(float(dat[1]))
+    galon.append(float(dat[1]))
+    galat.append(float(dat[0]))
     
 x, y = m(galon, galat)
+m.plot(x, y, 'o', mec='k', mfc='None', ms=10, lw=0.5, label='AU MMI')
+plt.legend(fontsize=15, loc=4, numpoints=1)
 '''
-for i, mmi in enumerate(gammi):
-    h1 = plt.plot(x[i], y[i], marker=r"$ {} $".format(str(int(round(mmi)))), ms=10, color='r', mec='none')
-    #plt.plot(x[i], y[i], marker=str(int(round(mmi))), ms=10, color='r')
-'''    
-h1 = plt.plot(x, y, 'kx', lw=2., ms=7)
-
-melmmifile = 'MEL_MMI_0.05d.csv'
-lines = open(melmmifile).readlines()
-melmmi = []
-mellat = []
-mellon = []
-for line in lines:
-    dat = line.strip().split(',')
-    melmmi.append(float(dat[2]))
-    mellon.append(float(dat[0]))
-    mellat.append(float(dat[1]))
-    
-x, y = m(mellon, mellat)
-h2 = plt.plot(x, y, 'ko', markerfacecolor='None', lw=2., ms=7)
-
+##########################################################################################
+# add contours
+##########################################################################################
 '''
-dyfifile = 'usgs_geocoded_cdi.txt'
-dyfidict = parse_usgs_dyfi_geocoded(dyfifile)
-#dyfifile = 'usgs_zip_cdi.txt'
-#dyfidict = parse_usgs_dyfi_zip(dyfifile)
-dyfimmi  = []
-dyfilat = []
-dyfilon = []
-for rec in dyfidict:
-    if rec['nresp'] >= 1:
-       dyfimmi.append(rec['cdi'])
-       dyfilat.append(rec['lat'])
-       dyfilon.append(rec['lon'])
+# resomple to smooth contours
+N = 100j
+xs2,ys2 = mgrid[extent[0]:extent[1]:N, extent[2]:extent[3]:N]
+smoothed = griddata(xmllons, xmllats, mmi, xs2, ys2, interp='linear')
+
+# set levels
+levels = arange(2.5, 9.6, 1.)
+
+# plt contours
+x, y = m(xs2, ys2)
+csm = plt.contour(x, y, smoothed, levels, colors='w', linewidth=3)
+plt.clabel(csm, inline=1, fontsize=10, fmt='%0.1f')
 '''
-dyfimmifile = 'USGS_MMI_0.05d.csv'
-lines = open(dyfimmifile).readlines()
-dyfimmi = []
-dyfilat = []
-dyfilon = []
-for line in lines:
-    dat = line.strip().split(',')
-    dyfimmi.append(float(dat[2]))
-    dyfilon.append(float(dat[0]))
-    dyfilat.append(float(dat[1]))
 
-x, y = m(dyfilon, dyfilat)
-h3 = plt.plot(x, y, 'k+', lw=2., ms=9)
-
-plt.legend([h1[0], h2[0], h3[0]], ['AU MMI', 'MEL MMI', 'USGS DYFI'], \
-            fontsize=15, loc=4, numpoints=1)
-"""
 ##########################################################################################
 # add cities
 ##########################################################################################
-"""
+'''
 import matplotlib.patheffects as PathEffects
 path_effects=[PathEffects.withStroke(linewidth=3, foreground="w")]
-clat = [-37.814, -38.197, -38.125, -38.235, -38.161, -38.102, -38.606] #-37.]
-clon = [144.964, 146.541, 146.263, 146.395, 145.932, 147.065, 145.588] #144.]
-cloc = ['Melbourne','Traralgon', 'Moe', 'Morwell', 'Warragul', 'Sale', 'Wonthaggi']
+clat = [-25.21] #-37.]
+clon = [130.97] #144.]
+cloc = ['Yulara']
 x, y = m(clon, clat)
 plt.plot(x, y, 'o', markerfacecolor='maroon', markeredgecolor='w', markeredgewidth=2, markersize=11)
 
@@ -247,7 +224,7 @@ for i, loc in enumerate(cloc):
     else:
         x, y = m(clon[i]+0.025, clat[i]+0.025)
         plt.text(x, y, loc, size=18, ha='left', weight='normal', path_effects=path_effects)
-"""
+'''
 ##########################################################################################
 # annotate earthquake
 ##########################################################################################
