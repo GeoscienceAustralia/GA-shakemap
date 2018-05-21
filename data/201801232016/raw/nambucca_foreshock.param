@@ -1,0 +1,7 @@
+locstring      = Nambucca Heads (foreshock), NSW
+eqla           = -30.501
+eqlo           =  153.092 
+eqdep          = 10.0
+eqmw           = 3.3
+yyyymmddHHMMSS = 20180123201645
+csvfile        = Nambucca_Heads_ml33_07AM_first_hour.csv
