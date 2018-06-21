@@ -131,30 +131,31 @@ smtxt += earthquake + '<stationlist created="' + str(int(time.time())) + '">\n'
 i = 0
 # get stn loc
 for la, lo, mi in zip(avla, avlo, avmmi):
-    code = 'OBS_'+str(i+1)
-    source = 'AU'
-    netid  = 'Intensity'
-    name = 'Unknown (Intensity ' + toRoman(round(mi)) +')'
+    if mi > 0:
+        code = 'OBS_'+str(i+1)
+        source = 'AU'
+        netid  = 'Intensity'
+        name = 'Unknown (Intensity ' + toRoman(round(mi)) +')'
+        
+        station = '"'.join(('<station code=', code, ' name=', name, ' insttype="Observed', \
+                            ' lat=', str('%0.4f' % float(la)), ' lon=', str('%0.4f' % float(lo)), ' source=', source, \
+                            ' netid=', netid, ' commtype="Intensity" intensity=', str('%0.1f' % mi),'>\n'))
     
-    station = '"'.join(('<station code=', code, ' name=', name, ' insttype="Observed', \
-                        ' lat=', str('%0.4f' % float(la)), ' lon=', str('%0.4f' % float(lo)), ' source=', source, \
-                        ' netid=', netid, ' commtype="Intensity" intensity=', str('%0.1f' % mi),'>\n'))
-
-    smtxt += station
-
-    # get distance
-    rngkm = distance(float(la), float(lo), float(eqla), float(eqlo))[0]       
+        smtxt += station
     
-    # make mmi comp
-    pga = cmpsps2g(mmi2pgm_worden12([mi], 'pga', float(eqmw), rngkm)[0])
-    pgv = (mmi2pgm_worden12([mi], 'pgv', eqmw, rngkm)[0])
-    
-    acc = str('%0.4f' % pga)
-    vel = str('%0.4f' % pgv)
-    smtxt += '"'.join(('    <comp name="DERIVED">\n        <acc value=', acc, '/>\n        <vel value=', \
-                      vel, '/>\n    </comp>\n</station>\n'))
-       
-    i += 1
+        # get distance
+        rngkm = distance(float(la), float(lo), float(eqla), float(eqlo))[0]       
+        
+        # make mmi comp
+        pga = cmpsps2g(mmi2pgm_worden12([mi], 'pga', float(eqmw), rngkm)[0])
+        pgv = (mmi2pgm_worden12([mi], 'pgv', eqmw, rngkm)[0])
+        
+        acc = str('%0.4f' % pga)
+        vel = str('%0.4f' % pgv)
+        smtxt += '"'.join(('    <comp name="DERIVED">\n        <acc value=', acc, '/>\n        <vel value=', \
+                          vel, '/>\n    </comp>\n</station>\n'))
+           
+        i += 1
 
 # end text
 smtxt += endtxt
