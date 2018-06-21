@@ -1,0 +1,71 @@
+<shakemap-data code_version="4.0 GSM" map_version="1">
+<earthquake id="20180620025432" lat="-32.668" lon="122.424" mag="4.57" year="2018" month="06" day="20" hour="02" minute="54" second="32" timezone="GMT" depth="10.0" locstring="Noreseman, WA" created="1529540216"/>
+<stationlist created="1529540216">
+<station code="OBS_1" name="Unknown (Intensity III)" insttype="Observed" lat="-33.0680" lon="121.4720" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_2" name="Unknown (Intensity III)" insttype="Observed" lat="-31.2100" lon="121.6160" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_3" name="Unknown (Intensity II)" insttype="Observed" lat="-32.2010" lon="121.7870" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_4" name="Unknown (Intensity III)" insttype="Observed" lat="-32.1920" lon="121.7790" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_5" name="Unknown (Intensity II)" insttype="Observed" lat="-33.8650" lon="121.8110" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_6" name="Unknown (Intensity III)" insttype="Observed" lat="-33.8680" lon="121.8740" source="AU" netid="Intensity" commtype="Intensity" intensity="3.2">
+    <comp name="DERIVED">
+        <acc value="0.0084"/>
+        <vel value="0.4031"/>
+    </comp>
+</station>
+<station code="OBS_7" name="Unknown (Intensity II)" insttype="Observed" lat="-33.8240" lon="121.8490" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_8" name="Unknown (Intensity III)" insttype="Observed" lat="-33.3130" lon="121.8840" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_9" name="Unknown (Intensity II)" insttype="Observed" lat="-33.8180" lon="121.9240" source="AU" netid="Intensity" commtype="Intensity" intensity="2.3">
+    <comp name="DERIVED">
+        <acc value="0.0023"/>
+        <vel value="0.1037"/>
+    </comp>
+</station>
+<station code="OBS_10" name="Unknown (Intensity III)" insttype="Observed" lat="-33.8680" lon="122.3240" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_11" name="Unknown (Intensity IV)" insttype="Observed" lat="-32.1100" lon="124.8420" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+</stationlist>
+</shakemap-data>
