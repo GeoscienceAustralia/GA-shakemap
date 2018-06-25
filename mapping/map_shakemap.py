@@ -21,9 +21,11 @@ from gmt_tools import cpt2colormap
 from mapping_tools import get_map_polygons, mask_outside_polygons
 from shakemap_tools import parse_dataxml
 from sys import argv
+from os import getcwd
 
 plt.rcParams['pdf.fonttype'] = 42
 mpl.style.use('classic')
+cwd = getcwd()
 
 ##########################################################################################
 # parse shakemap grid
@@ -133,7 +135,11 @@ resampled = griddata(xmllons, xmllats, mmi, xs, ys, interp='linear')
 lons = ogrid[extent[0]:extent[1]:N]
 lats = ogrid[extent[2]:extent[3]:N]
 
-mmidat = m.transform_scalar(resampled.T,lons,lats,nx,ny)
+# nas interprets grids differently
+if cwd.startswith('/nas'):
+    mmidat = m.transform_scalar(resampled.T,lons,lats,nx,ny)
+else:
+    mmidat = m.transform_scalar(resampled,lons,lats,nx,ny)
 
 print 'Getting colormap...'
 # get colormap
