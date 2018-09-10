@@ -1,0 +1,671 @@
+<shakemap-data code_version="4.0 GSM" map_version="1">
+<earthquake id="19180606181400" lat="-23.5" lon="152.5" mag="5.9" year="1918" month="06" day="06" hour="18" minute="14" second="00" timezone="GMT" depth="10.0" locstring="Lady Elliot Island, QLD" created="1536552428"/>
+<stationlist created="1536552428">
+<station code="OBS_1" name="Unknown (Intensity III)" insttype="Observed" lat="-26.6240" lon="148.2540" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_2" name="Unknown (Intensity II)" insttype="Observed" lat="-26.5640" lon="148.7990" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_3" name="Unknown (Intensity IV)" insttype="Observed" lat="-21.1500" lon="149.1000" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_4" name="Unknown (Intensity II)" insttype="Observed" lat="-26.6170" lon="149.1910" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_5" name="Unknown (Intensity V)" insttype="Observed" lat="-23.5030" lon="149.3970" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_6" name="Unknown (Intensity II)" insttype="Observed" lat="-26.6440" lon="149.4800" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_7" name="Unknown (Intensity II)" insttype="Observed" lat="-22.3580" lon="149.5000" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_8" name="Unknown (Intensity III)" insttype="Observed" lat="-22.4560" lon="149.5740" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_9" name="Unknown (Intensity V)" insttype="Observed" lat="-24.4500" lon="150.1000" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_10" name="Unknown (Intensity V)" insttype="Observed" lat="-24.1000" lon="150.1000" source="AU" netid="Intensity" commtype="Intensity" intensity="4.5">
+    <comp name="DERIVED">
+        <acc value="0.0454"/>
+        <vel value="3.0888"/>
+    </comp>
+</station>
+<station code="OBS_11" name="Unknown (Intensity V)" insttype="Observed" lat="-26.6280" lon="150.1750" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_12" name="Unknown (Intensity V)" insttype="Observed" lat="-25.3000" lon="150.3000" source="AU" netid="Intensity" commtype="Intensity" intensity="4.5">
+    <comp name="DERIVED">
+        <acc value="0.0454"/>
+        <vel value="3.0888"/>
+    </comp>
+</station>
+<station code="OBS_13" name="Unknown (Intensity V)" insttype="Observed" lat="-23.0060" lon="150.3210" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_14" name="Unknown (Intensity V)" insttype="Observed" lat="-23.8220" lon="150.4070" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_15" name="Unknown (Intensity V)" insttype="Observed" lat="-23.6320" lon="150.3920" source="AU" netid="Intensity" commtype="Intensity" intensity="4.5">
+    <comp name="DERIVED">
+        <acc value="0.0454"/>
+        <vel value="3.0888"/>
+    </comp>
+</station>
+<station code="OBS_16" name="Unknown (Intensity V)" insttype="Observed" lat="-25.0500" lon="150.4500" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_17" name="Unknown (Intensity VI)" insttype="Observed" lat="-23.3810" lon="150.5200" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_18" name="Unknown (Intensity IV)" insttype="Observed" lat="-24.0490" lon="150.5610" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_19" name="Unknown (Intensity V)" insttype="Observed" lat="-26.7190" lon="150.6170" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_20" name="Unknown (Intensity VI)" insttype="Observed" lat="-23.4920" lon="150.6320" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_21" name="Unknown (Intensity VI)" insttype="Observed" lat="-23.0130" lon="150.6260" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_22" name="Unknown (Intensity V)" insttype="Observed" lat="-24.8790" lon="150.6900" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_23" name="Unknown (Intensity IV)" insttype="Observed" lat="-24.8580" lon="150.6920" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_24" name="Unknown (Intensity VI)" insttype="Observed" lat="-23.2130" lon="150.7240" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_25" name="Unknown (Intensity II)" insttype="Observed" lat="-28.5850" lon="150.7670" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_26" name="Unknown (Intensity VI)" insttype="Observed" lat="-23.1090" lon="150.7560" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_27" name="Unknown (Intensity V)" insttype="Observed" lat="-24.8810" lon="150.8090" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_28" name="Unknown (Intensity IV)" insttype="Observed" lat="-24.8290" lon="150.8220" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_29" name="Unknown (Intensity VI)" insttype="Observed" lat="-23.2460" lon="150.7960" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_30" name="Unknown (Intensity II)" insttype="Observed" lat="-28.8500" lon="151.1310" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_31" name="Unknown (Intensity V)" insttype="Observed" lat="-24.9760" lon="151.2050" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_32" name="Unknown (Intensity V)" insttype="Observed" lat="-24.8670" lon="151.1990" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_33" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.1780" lon="151.2410" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_34" name="Unknown (Intensity VI)" insttype="Observed" lat="-23.9450" lon="151.2350" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_35" name="Unknown (Intensity V)" insttype="Observed" lat="-23.8660" lon="151.2370" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_36" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.3610" lon="151.5490" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_37" name="Unknown (Intensity III)" insttype="Observed" lat="-24.2930" lon="151.5800" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_38" name="Unknown (Intensity III)" insttype="Observed" lat="-27.3720" lon="151.6680" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_39" name="Unknown (Intensity V)" insttype="Observed" lat="-25.6020" lon="151.6370" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_40" name="Unknown (Intensity V)" insttype="Observed" lat="-27.7010" lon="151.7780" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_41" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.5530" lon="151.8200" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_42" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.4140" lon="151.8090" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_43" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.3480" lon="151.8250" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_44" name="Unknown (Intensity V)" insttype="Observed" lat="-24.5870" lon="151.8050" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_45" name="Unknown (Intensity V)" insttype="Observed" lat="-27.9240" lon="151.8600" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_46" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.2800" lon="151.8710" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_47" name="Unknown (Intensity V)" insttype="Observed" lat="-27.7540" lon="151.9080" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_48" name="Unknown (Intensity V)" insttype="Observed" lat="-27.5420" lon="151.9170" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_49" name="Unknown (Intensity V)" insttype="Observed" lat="-26.2290" lon="151.9190" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_50" name="Unknown (Intensity V)" insttype="Observed" lat="-24.6060" lon="151.8910" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_51" name="Unknown (Intensity V)" insttype="Observed" lat="-28.2270" lon="151.9750" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_52" name="Unknown (Intensity V)" insttype="Observed" lat="-26.8190" lon="151.9720" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_53" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.6370" lon="151.9750" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_54" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.5360" lon="151.9910" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_55" name="Unknown (Intensity V)" insttype="Observed" lat="-27.2600" lon="152.0190" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_56" name="Unknown (Intensity V)" insttype="Observed" lat="-25.4500" lon="152.0000" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_57" name="Unknown (Intensity V)" insttype="Observed" lat="-24.9900" lon="151.9860" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_58" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.9790" lon="152.0840" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_59" name="Unknown (Intensity V)" insttype="Observed" lat="-26.8740" lon="152.0920" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_60" name="Unknown (Intensity V)" insttype="Observed" lat="-28.1520" lon="152.1560" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_61" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.5780" lon="152.1600" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_62" name="Unknown (Intensity IV)" insttype="Observed" lat="-28.3460" lon="152.2310" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_63" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.5450" lon="152.2310" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_64" name="Unknown (Intensity V)" insttype="Observed" lat="-25.1770" lon="152.2610" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_65" name="Unknown (Intensity VI)" insttype="Observed" lat="-24.7870" lon="152.3140" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_66" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.6280" lon="152.3630" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_67" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.1030" lon="152.3450" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_68" name="Unknown (Intensity V)" insttype="Observed" lat="-25.0170" lon="152.3370" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_69" name="Unknown (Intensity V)" insttype="Observed" lat="-24.8480" lon="152.3680" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_70" name="Unknown (Intensity VI)" insttype="Observed" lat="-24.8210" lon="152.3320" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_71" name="Unknown (Intensity VI)" insttype="Observed" lat="-24.8860" lon="152.3850" source="AU" netid="Intensity" commtype="Intensity" intensity="6.0">
+    <comp name="DERIVED">
+        <acc value="0.1155"/>
+        <vel value="9.6422"/>
+    </comp>
+</station>
+<station code="OBS_72" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.4360" lon="152.4440" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_73" name="Unknown (Intensity III)" insttype="Observed" lat="-27.6350" lon="152.5280" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_74" name="Unknown (Intensity V)" insttype="Observed" lat="-27.4610" lon="152.5390" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_75" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.1740" lon="152.6650" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_76" name="Unknown (Intensity IV)" insttype="Observed" lat="-25.3340" lon="152.6340" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_77" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.6220" lon="152.7140" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_78" name="Unknown (Intensity IV)" insttype="Observed" lat="-25.5330" lon="152.6960" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_79" name="Unknown (Intensity V)" insttype="Observed" lat="-26.8160" lon="152.8240" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_80" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.7500" lon="152.8140" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_81" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.6000" lon="152.7780" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_82" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.3460" lon="152.8220" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_83" name="Unknown (Intensity V)" insttype="Observed" lat="-26.8140" lon="152.8510" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_84" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.6390" lon="152.8460" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_85" name="Unknown (Intensity V)" insttype="Observed" lat="-26.5290" lon="152.9250" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_86" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.4280" lon="152.9030" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_87" name="Unknown (Intensity V)" insttype="Observed" lat="-27.4140" lon="152.9450" source="AU" netid="Intensity" commtype="Intensity" intensity="4.5">
+    <comp name="DERIVED">
+        <acc value="0.0454"/>
+        <vel value="3.0888"/>
+    </comp>
+</station>
+<station code="OBS_88" name="Unknown (Intensity V)" insttype="Observed" lat="-27.3220" lon="152.9720" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_89" name="Unknown (Intensity II)" insttype="Observed" lat="-26.8870" lon="152.9390" source="AU" netid="Intensity" commtype="Intensity" intensity="2.0">
+    <comp name="DERIVED">
+        <acc value="0.0014"/>
+        <vel value="0.0615"/>
+    </comp>
+</station>
+<station code="OBS_90" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.7940" lon="152.9430" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_91" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.6810" lon="152.9450" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_92" name="Unknown (Intensity III)" insttype="Observed" lat="-26.6060" lon="152.9520" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_93" name="Unknown (Intensity V)" insttype="Observed" lat="-27.5700" lon="153.0130" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_94" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.4810" lon="152.9780" source="AU" netid="Intensity" commtype="Intensity" intensity="3.5">
+    <comp name="DERIVED">
+        <acc value="0.0131"/>
+        <vel value="0.6449"/>
+    </comp>
+</station>
+<station code="OBS_95" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.4720" lon="153.0080" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_96" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.3920" lon="153.0180" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_97" name="Unknown (Intensity III)" insttype="Observed" lat="-27.6280" lon="153.0490" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_98" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.4240" lon="153.0440" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_99" name="Unknown (Intensity IV)" insttype="Observed" lat="-26.6720" lon="153.0420" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_100" name="Unknown (Intensity III)" insttype="Observed" lat="-27.6620" lon="153.1020" source="AU" netid="Intensity" commtype="Intensity" intensity="3.0">
+    <comp name="DERIVED">
+        <acc value="0.0062"/>
+        <vel value="0.2947"/>
+    </comp>
+</station>
+<station code="OBS_101" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.4740" lon="153.0930" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_102" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.4190" lon="153.0890" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_103" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.9150" lon="153.1420" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_104" name="Unknown (Intensity IV)" insttype="Observed" lat="-27.4740" lon="153.1280" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_105" name="Unknown (Intensity IV)" insttype="Observed" lat="-28.8410" lon="153.1790" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_106" name="Unknown (Intensity IV)" insttype="Observed" lat="-24.7390" lon="153.2650" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_107" name="Unknown (Intensity V)" insttype="Observed" lat="-27.3570" lon="153.2960" source="AU" netid="Intensity" commtype="Intensity" intensity="5.0">
+    <comp name="DERIVED">
+        <acc value="0.0620"/>
+        <vel value="4.6529"/>
+    </comp>
+</station>
+<station code="OBS_108" name="Unknown (Intensity IV)" insttype="Observed" lat="-28.9740" lon="153.3450" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_109" name="Unknown (Intensity IV)" insttype="Observed" lat="-28.3600" lon="153.3400" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_110" name="Unknown (Intensity IV)" insttype="Observed" lat="-28.4550" lon="153.4480" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+<station code="OBS_111" name="Unknown (Intensity IV)" insttype="Observed" lat="-28.2230" lon="153.4500" source="AU" netid="Intensity" commtype="Intensity" intensity="4.0">
+    <comp name="DERIVED">
+        <acc value="0.0276"/>
+        <vel value="1.4114"/>
+    </comp>
+</station>
+</stationlist>
+</shakemap-data>

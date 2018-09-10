@@ -49,9 +49,9 @@ print 'Reading netCDF file...'
 #nc = NetCDFFile('//Users//tallen//Documents//DATA//GMT//GEBCO//Australia_30c.nc')
 #nc = NetCDFFile('//Users//tallen//Documents//DATA//GMT//GEBCO//Australia_30c.nc')
 #nc = NetCDFFile('usgs_vs30.grd') # usgs
-#nc = NetCDFFile('asscm_wii_vs30.grd.hold') # non-modified
-nc = NetCDFFile('asscm_wii_vs30.900.grd') # hardwired to 900?
-
+#nc = NetCDFFile('asscm_wii_vs30_original.grd') # non-modified
+#nc = NetCDFFile('asscm_wii_vs30.900.grd') # hardwired to 900?
+nc = NetCDFFile('asscm_wii_vs30.grd') # Nan set to C/D
 
 zscale =20. #gray
 zscale =50. #colour

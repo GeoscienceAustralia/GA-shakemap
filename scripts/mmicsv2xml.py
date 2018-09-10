@@ -61,18 +61,23 @@ csvfile format with one header line:
 '''
 
 # get station data
-lines = open(path.join(inFolder, csvfile)).readlines()[1:]
+lines = open(path.join(inFolder, csvfile)).readlines()
 lat = []
 lon = []
 mmi = []
-for line in lines:
+for line in lines[1:]:
     dat = line.strip().split(',')
-    try:
-        lat.append(float(dat[0])) # keep as string
-        lon.append(float(dat[1])) # keep as string
-        mmi.append(float(dat[2])) 
-    except:
-        print 'Missing data!'
+    if lines[0].startswith('ORIGINTIME,'):
+        lat.append(float(dat[6])) # keep as string
+        lon.append(float(dat[5])) # keep as string
+        mmi.append(float(dat[7]))
+    else:
+        try:
+            lat.append(float(dat[0])) # keep as string
+            lon.append(float(dat[1])) # keep as string
+            mmi.append(float(dat[2])) 
+        except:
+            print 'Missing data!'
     
 # grid data and take average
 mmi = array(mmi)
