@@ -21,7 +21,8 @@ from gmt_tools import cpt2colormap
 from mapping_tools import get_map_polygons, mask_outside_polygons
 from shakemap_tools import parse_dataxml
 from sys import argv
-from os import getcwd
+from os import getcwd, mkdir, path
+import shapefile
 
 plt.rcParams['pdf.fonttype'] = 42
 mpl.style.use('classic')
@@ -76,7 +77,12 @@ m.drawstates()
 m.drawcountries()
 #m.drawmapboundary(fill_color='blue', zorder=50)
 #m.fillcontinents(color='coral',lake_color='aqua')
-if lonspan <= 4.0:
+if lonspan <= 3.0:
+    tickspace = 0.5
+    scale_len = 50
+    latoff = 0.12
+    lonoff = 0.3
+elif lonspan <= 4.0:
     tickspace = 0.5
     scale_len = 100
 elif lonspan > 4.0:
@@ -85,7 +91,7 @@ elif lonspan > 4.0:
 m.drawparallels(arange(-90.,90.,tickspace), labels=[1,0,0,0],fontsize=16, dashes=[2, 2], color='0.99', linewidth=0.0)
 m.drawmeridians(arange(0.,360.,tickspace), labels=[0,0,0,1], fontsize=16, dashes=[2, 2], color='0.99', linewidth=0.0)
 
-m.drawmapscale(llcrnrlon+1, llcrnrlat+0.4, llcrnrlon+1, llcrnrlat+0.4, scale_len, \
+m.drawmapscale(llcrnrlon+lonoff, llcrnrlat+latoff, llcrnrlon+lonoff, llcrnrlat+latoff, scale_len, \
                fontsize = 14, barstyle='fancy', zorder=100)
 
 ##########################################################################################
@@ -209,28 +215,47 @@ plt.clabel(csm, inline=1, fontsize=10, fmt='%0.1f')
 ##########################################################################################
 # add cities
 ##########################################################################################
-'''
+
 import matplotlib.patheffects as PathEffects
 path_effects=[PathEffects.withStroke(linewidth=3, foreground="w")]
-clat = [-25.21] #-37.]
-clon = [130.97] #144.]
-cloc = ['Yulara']
-x, y = m(clon, clat)
-plt.plot(x, y, 'o', markerfacecolor='maroon', markeredgecolor='w', markeredgewidth=2, markersize=11)
+
+# parse AU cities
+cityFile = 'cities1000_au_ascii.txt'
+
+lines = open(cityFile).readlines()
 
 # label cities
-off = 0.25
-for i, loc in enumerate(cloc):
-    if i == 3:
-        x, y = m(clon[i]+0.025, clat[i]-0.025)
-        plt.text(x, y, loc, size=18, ha='left', va='top', weight='normal', path_effects=path_effects)
-    elif i == 4:
-        x, y = m(clon[i]-0.048, clat[i]+0.025)
-        plt.text(x, y, loc, size=18, ha='right', weight='normal', path_effects=path_effects)
-    else:
-        x, y = m(clon[i]+0.025, clat[i]+0.025)
-        plt.text(x, y, loc, size=18, ha='left', weight='normal', path_effects=path_effects)
-'''
+clatList = []
+clonList = []
+
+for line in lines:
+    dat = line.strip().split('\t')
+    clat = float(dat[4])
+    clon = float(dat[5])
+    loc = dat[1]
+    
+    off = 0.15
+    if clat > llcrnrlat and clat < urcrnrlat \
+       and clon > llcrnrlon and clon < urcrnrlon:
+        pltCity = True
+        
+        for clol, clal in zip(clonList, clatList):
+            if abs(clat - clal) < 0.1 and abs(clon - clol) < 0.1:
+                pltCity = False
+                
+        # build list of locs
+        clatList.append(clat)
+        clonList.append(clon)
+        minLatDiff = 0.
+        minLonDiff = 0.
+        
+        if pltCity == True:
+            x, y = m(clon, clat)
+            plt.plot(x, y, 'o', markerfacecolor='maroon', markeredgecolor='w', markeredgewidth=2, markersize=11)
+    
+            x, y = m(clon+0.025, clat+0.025)
+            plt.text(x, y, loc, size=16, ha='left', weight='normal', path_effects=path_effects)
+
 ##########################################################################################
 # annotate earthquake
 ##########################################################################################
@@ -260,7 +285,7 @@ cb = colorbar.ColorbarBase(cax, cmap=cmap, norm=norm, orientation='horizontal')
 
 # set cb labels
 ticks = range(1,11)
-rom_num = ['I', 'II', 'III', 'VI', 'V', 'VI','VII','VIII','IX','X']
+rom_num = ['I', 'II', 'III', 'IV', 'V', 'VI','VII','VIII','IX','X']
 cb.set_ticks(ticks)
 cb.set_ticklabels(rom_num)
 
@@ -273,4 +298,70 @@ cb.set_label(titlestr, fontsize=15)
     
 pngFile = event['event_description'].split(',')[0].replace(' ','_')+'.png'
 plt.savefig(pngFile, format='png', bbox_inches='tight', dpi=300)
+
+##########################################################################################
+# make shapefile of contour lines
+##########################################################################################
+
+# check to see if shapefile contours exists
+if path.isdir('contours') == False:
+    mkdir('contours')
+    
+# make list of levels - old levels array([0.005, 0.01, 0.02, 0.04, 0.06, 0.08, 0.12, 0.18, 0.24])
+allLevels = [arange(0.5, 11., 1.)]
+ 
+levelNames = ['mmi_contours'] #, 'lev_0_01', 'lev_0_02', 'lev_0_05'
+
+
+# resomple to smooth contours
+N = 80j
+xs2,ys2 = mgrid[extent[0]:extent[1]:N, extent[2]:extent[3]:N]
+smoothed = griddata(xmllons, xmllats, mmi, xs2, ys2, interp='linear')
+
+resampled = smoothed
+xs = xs2
+ys = ys2          
+
+# loop thru levels
+for levels, levelName in zip(allLevels, levelNames):
+    
+    # setup shapefile
+    '''
+    outshp = path.join('contours', '_'.join((levelNames[0].replace(' ','_'), key, \
+                       levelName, 'contours.shp')))
+    '''
+    outshp = 'mmi_contours.shp'
+
+    # set shapefile to write to
+    w = shapefile.Writer(shapefile.POLYLINE)
+    w.field('MMI','F', 5, 2)
+        
+    # have to re-contour using un-transformed lat/lons
+    cs = plt.contour(xs, ys, resampled, levels, colors='k')
+    
+    plt.close(fig)
+    
+    # loop through contour levels
+    for l, lev in enumerate(cs.levels):
+        contours = cs.collections[l].get_paths()
+        
+        # now loop through multiple paths within level
+        if len(contours) > 0:
+            for cnt in contours:
+                
+                # add polyline to shapefile
+                w.line(parts=[cnt.vertices], shapeType=shapefile.POLYLINE)
+                
+                # add level attribute
+                w.record(lev)
+
+    # now save area shapefile
+    w.save(outshp)
+    
+    # write projection file
+    prjfile = outshp.strip().split('.shp')[0]+'.prj'
+    f = open(prjfile, 'wb')
+    f.write('GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]')
+    f.close()
+
 plt.show()
