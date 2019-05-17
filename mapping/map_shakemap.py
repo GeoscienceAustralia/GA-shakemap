@@ -235,12 +235,12 @@ for line in lines:
     loc = dat[1]
     
     off = 0.15
-    if clat > llcrnrlat and clat < urcrnrlat \
+    if clat > llcrnrlat and clat < urcrnrlat-0.15 \
        and clon > llcrnrlon and clon < urcrnrlon:
         pltCity = True
         
         for clol, clal in zip(clonList, clatList):
-            if abs(clat - clal) < 0.1 and abs(clon - clol) < 0.1:
+            if abs(clat - clal) < 0.1 and abs(clon - clol) < 0.25:
                 pltCity = False
                 
         # build list of locs

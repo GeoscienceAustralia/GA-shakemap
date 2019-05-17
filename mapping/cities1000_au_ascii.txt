@@ -1,3 +1,4 @@
+2174003	Brisbane	Brisbane	BNE,Brisbane,Brisbane City,Brisbano,Brisben,Brisbenas,Brizbejn,beulijeubeon,brisben,brysban,bryzbyn,bryzbyyn,bu li si ban,burisuben,pirispen,                ,              ,                ,              ,              ,              ,                              ,                     ,               ,            ,            	-27.46794	153.02809	P	PPLA	AU		04	31000			2189878		27	Australia/Brisbane	2013-06-25
 2057277	York	York	Jork,York,        	-31.88809	116.7678	P	PPL	AU		08	59730			2090		179	Australia/Perth	2014-12-06
 2057575	Yanchep	Yanchep	Yanchep,Yancher	-31.54678	115.63171	P	PPLX	AU		08	58760			2481		15	Australia/Perth	2015-02-11
 2057614	Yallingup	Yallingup	Yallingup,Yallingup Caves	-33.64592	115.03514	P	PPL	AU	AU	08	51260			1059		61	Australia/Perth	2014-07-08

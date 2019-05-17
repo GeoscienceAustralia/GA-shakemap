@@ -132,6 +132,9 @@ endtxt = '</stationlist>\n</shakemap-data>'
 
 smtxt += earthquake + '<stationlist created="' + str(int(time.time())) + '">\n'
 
+# start alternate raw_mmi file
+raw_mmi = ','.join((yyyymmddHHMMSS[:-2], str(eqlo), str(eqla), str(eqdp), str(eqmw), locstring.replace(',', ''))) + '\n'
+
 # now loop thru station data and get GM values
 i = 0
 # get stn loc
@@ -147,6 +150,8 @@ for la, lo, mi in zip(avla, avlo, avmmi):
                             ' netid=', netid, ' commtype="Intensity" intensity=', str('%0.1f' % mi),'>\n'))
     
         smtxt += station
+        
+        raw_mmi += ','.join((str('%0.4f' % float(lo)), str('%0.4f' % float(la)), str('%0.1f' % mi))) + '\n'
     
         # get distance
         rngkm = distance(float(la), float(lo), float(eqla), float(eqlo))[0]       
@@ -173,4 +178,12 @@ if path.isdir(currentFolder) == False:
 # write to xml file
 f = open(path.join(outFolder, 'current', str(yyyymmddHHMMSS)+'_obs_dat.xml'), 'wb')
 f.write(smtxt)
+f.close()
+
+###############################################################################
+# export simplified file
+
+# write to xml file
+f = open(yyyymmddHHMMSS+'_raw_mmi.csv', 'wb')
+f.write(raw_mmi)
 f.close()
