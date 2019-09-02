@@ -18,7 +18,7 @@ from matplotlib.colors import LightSource
 from numpy import arange, mean, percentile, array, unique, where, mgrid, ogrid
 from netCDF4 import Dataset as NetCDFFile
 from gmt_tools import cpt2colormap
-from mapping_tools import get_map_polygons, mask_outside_polygons
+from mapping_tools import get_map_polygons, mask_outside_polygons, annotate_cities
 from shakemap_tools import parse_dataxml
 from sys import argv
 from os import getcwd, mkdir, path
@@ -85,9 +85,13 @@ if lonspan <= 3.0:
 elif lonspan <= 4.0:
     tickspace = 0.5
     scale_len = 100
+    latoff = 0.0
+    lonoff = 0.0
 elif lonspan > 4.0:
     tickspace = 1.0
     scale_len = 200
+    latoff = 0.0
+    lonoff = 0.0
 m.drawparallels(arange(-90.,90.,tickspace), labels=[1,0,0,0],fontsize=16, dashes=[2, 2], color='0.99', linewidth=0.0)
 m.drawmeridians(arange(0.,360.,tickspace), labels=[0,0,0,1], fontsize=16, dashes=[2, 2], color='0.99', linewidth=0.0)
 
@@ -215,47 +219,8 @@ plt.clabel(csm, inline=1, fontsize=10, fmt='%0.1f')
 ##########################################################################################
 # add cities
 ##########################################################################################
-
-import matplotlib.patheffects as PathEffects
-path_effects=[PathEffects.withStroke(linewidth=3, foreground="w")]
-
-# parse AU cities
-cityFile = 'cities1000_au_ascii.txt'
-
-lines = open(cityFile).readlines()
-
-# label cities
-clatList = []
-clonList = []
-
-for line in lines:
-    dat = line.strip().split('\t')
-    clat = float(dat[4])
-    clon = float(dat[5])
-    loc = dat[1]
-    
-    off = 0.15
-    if clat > llcrnrlat and clat < urcrnrlat-0.15 \
-       and clon > llcrnrlon and clon < urcrnrlon:
-        pltCity = True
-        
-        for clol, clal in zip(clonList, clatList):
-            if abs(clat - clal) < 0.1 and abs(clon - clol) < 0.25:
-                pltCity = False
-                
-        # build list of locs
-        clatList.append(clat)
-        clonList.append(clon)
-        minLatDiff = 0.
-        minLonDiff = 0.
-        
-        if pltCity == True:
-            x, y = m(clon, clat)
-            plt.plot(x, y, 'o', markerfacecolor='maroon', markeredgecolor='w', markeredgewidth=2, markersize=11)
-    
-            x, y = m(clon+0.025, clat+0.025)
-            plt.text(x, y, loc, size=16, ha='left', weight='normal', path_effects=path_effects)
-
+numCities=15
+annotate_cities(numCities, plt, m)
 ##########################################################################################
 # annotate earthquake
 ##########################################################################################
@@ -264,7 +229,7 @@ eqlat = event['lat']
 eqlon = event['lon']
 
 x, y = m(eqlon, eqlat)
-plt.plot(x, y, '*', markerfacecolor='r', markeredgecolor='w', markeredgewidth=.5, markersize=25)
+#plt.plot(x, y, '*', markerfacecolor='r', markeredgecolor='w', markeredgewidth=.5, markersize=25)
                   
 ##########################################################################################
 # add title

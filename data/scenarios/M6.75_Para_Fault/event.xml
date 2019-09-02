@@ -23,4 +23,4 @@
   created	CDATA	#REQUIRED
 >
 ]>
-<earthquake id="SCENARIO_M7.2_Cadell" lat="-35.9" lon="144.8" mag="7.2" time="2059-12-31T00:00:00Z" timezone="GMT" depth="10" locstring="SCENARIO - Cadell Fault, NSW-VIC" description="SCENARIO_M7.2_Cadell" type="RS" created="1056046245" netid="au" />
+<earthquake id="SCENARIO_M6.75_Para_Fault" lat="-34.8" lon="138.6" mag="6.75" time="2059-12-31T00:00:00Z" timezone="GMT" depth="5" locstring="SCENARIO - Para Fault, SA" description="SCENARIO_M6.75_Para_Fault" type="RS" created="1056046245" netid="au"/>
