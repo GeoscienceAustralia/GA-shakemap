@@ -14,10 +14,6 @@
     </comp>
 </station>
 <station code="OBS_3" name="Unknown (Intensity IV)" insttype="Observed" lat="-25.5508" lon="129.0000" source="AU" netid="Intensity" commtype="Intensity" intensity="9.5">
-    <comp name="DERIVED">
-        <acc value="1.0197"/>
-        <vel value="123.5299"/>
-    </comp>
 </station>
 <station code="OBS_4" name="Unknown (Intensity IV)" insttype="Observed" lat="-25.9991" lon="129.4997" source="AU" netid="Intensity" commtype="Intensity" intensity="4.5">
     <comp name="DERIVED">

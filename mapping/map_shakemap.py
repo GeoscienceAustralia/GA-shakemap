@@ -80,7 +80,7 @@ m.drawcountries()
 if lonspan <= 3.0:
     tickspace = 0.5
     scale_len = 50
-    latoff = 0.12
+    latoff = 0.15
     lonoff = 0.3
 elif lonspan <= 4.0:
     tickspace = 0.5
@@ -182,7 +182,9 @@ for polygon in m.lakepolygons:
 ##########################################################################################
 # plot MMI locs
 ##########################################################################################
+# look for obs_dat.xml
 '''
+split_path = xmlPath.split(path.split())
 gammifile = '../data/201605201814/raw/Pettermann_ranges_2016_intensities.csv'
 lines = open(gammifile).readlines()[1:]
 gammi = []
@@ -229,7 +231,7 @@ eqlat = event['lat']
 eqlon = event['lon']
 
 x, y = m(eqlon, eqlat)
-#plt.plot(x, y, '*', markerfacecolor='r', markeredgecolor='w', markeredgewidth=.5, markersize=25)
+plt.plot(x, y, '*', markerfacecolor='None', markeredgecolor='k', markeredgewidth=2, markersize=25)
                   
 ##########################################################################################
 # add title

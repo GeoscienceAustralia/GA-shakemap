@@ -23,4 +23,4 @@
   created	CDATA	#REQUIRED
 >
 ]>
-<earthquake id="201206191053" lat="-38.259" lon="146.290" mag="5.0" year="2012" month="06" day="19" hour="10" minute="53" second="29" timezone="GMT" depth="18" locstring="Moe, Victoria" description="Moe Mean" type="RS" created="1056046245" network="au" />
+<earthquake id="201206191053" lat="-38.259" lon="146.290" mag="5.17" year="2012" month="06" day="19" hour="10" minute="53" second="29" timezone="GMT" depth="17.2" locstring="Moe, Victoria" description="Moe Mean" type="RS" created="1056046245" network="au" />
