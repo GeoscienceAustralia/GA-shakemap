@@ -32,7 +32,6 @@ class AtkinsonEtAl2014Cal(IPE):
     Wald (2014). Intensity prediction equations for North America, Bull. 
     Seismol. Soc. Am. 104, doi: 10.1785/0120140178.
 
-
     This class implements the version for California neglecting
     site amplification
     """
@@ -72,7 +71,7 @@ class AtkinsonEtAl2014Cal(IPE):
         C = self.COEFFS[imt]
         mean = (self._compute_magnitude_term(C, rup.mag) +
                 self._compute_distance_term(C, dists.rhypo, rup.mag))
-        stddevs = self._get_stddevs(stddev_types)
+        stddevs = self._get_stddevs(stddev_types, dists.rhypo.shape[0])
         return mean, stddevs
 
     def _compute_magnitude_term(self, C, mag):
@@ -94,16 +93,17 @@ class AtkinsonEtAl2014Cal(IPE):
         
         return C["c3"]*np.log10(R) + C["c4"]*R + C["c5"]*B + C["c6"]*mag*np.log10(R)
 
-    def _get_stddevs(self, stddev_types):
+    def _get_stddevs(self, stddev_types, num_sites):
         """
-        Returns the total standard deviation
+        Return total standard deviation.
         """
+        # standard deviation is in MMI units
         stddevs = []
         for stddev_type in stddev_types:
             assert stddev_type in self.DEFINED_FOR_STANDARD_DEVIATION_TYPES
             if stddev_type == const.StdDev.TOTAL:
                 sigma = 0.15
-                stddevs.append(sigma)
+                stddevs.append(sigma + np.zeros(num_sites))
         return stddevs
 
     COEFFS = CoeffsTable(sa_damping=5, table="""
@@ -129,7 +129,7 @@ class AtkinsonEtAl2014CEUS(AtkinsonEtAl2014Cal):
         mean = (self._compute_magnitude_term(C, rup.mag) +
                 self._compute_distance_term(C, dists.rhypo, rup.mag) +
                 self._compute_ceus_term(C, dists.rhypo, rup.hypo_depth))
-        stddevs = self._get_stddevs(stddev_types)
+        stddevs = self._get_stddevs(stddev_types, dists.rhypo.shape[0])
         return mean, stddevs
 
     def _compute_ceus_term(self, C, rhypo, hypo_depth):
