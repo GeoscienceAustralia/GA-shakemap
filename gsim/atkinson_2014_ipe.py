@@ -99,16 +99,16 @@ class AtkinsonEtAl2014Cal(IPE):
         """
         # standard deviation is in MMI units
         stddevs = []
-        std_total = 0.15
-        '''
+        std_total = 0.5
+        
         for stddev_type in stddev_types:
             assert stddev_type in self.DEFINED_FOR_STANDARD_DEVIATION_TYPES
             if stddev_type == const.StdDev.TOTAL:
-                sigma = 0.15
-                stddevs.append(sigma + np.zeros(num_sites))
+                stddevs.append(std_total + np.zeros(num_sites))
         '''
         for _ in stddev_types:
             stddevs.append(np.zeros(num_sites) + std_total)
+        '''
         return stddevs
 
     COEFFS = CoeffsTable(sa_damping=5, table="""
